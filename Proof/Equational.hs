@@ -1,10 +1,9 @@
-{-# LANGUAGE CPP, DataKinds, FlexibleContexts, GADTs, KindSignatures #-}
+{-# LANGUAGE DataKinds, FlexibleContexts, GADTs, KindSignatures      #-}
 {-# LANGUAGE PolyKinds, RankNTypes, ScopedTypeVariables              #-}
 {-# LANGUAGE StandaloneDeriving, TypeFamilies, TypeOperators         #-}
 {-# LANGUAGE TypeSynonymInstances, UndecidableInstances              #-}
-#if defined(__GLASGOW_HASKELL__) && __GLASGOW_HASKELL__ >= 800
-{-# LANGUAGE ConstrainedClassMethods, TypeFamilyDependencies #-}
-#endif
+{-# LANGUAGE ConstrainedClassMethods, TypeFamilyDependencies         #-}
+
 module Proof.Equational ( (:~:)(..), (:=:)
                         , sym, trans
                         , Equality(..), Preorder(..), reflexivity'
